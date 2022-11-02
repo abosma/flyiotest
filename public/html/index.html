@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Basic FlyIO/SocketIO Test</title>
+    <meta name="description" content="FlyIO/SocketIO Test">
+    <meta name="author" content="Atilla Bosma">
+
+    <meta property="og:title" content="FlyIO/SocketIO Test">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.abosma.com">
+    <meta property="og:description" content="FlyIO/SocketIO Test">
+    <meta property="og:image" content="/">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+    <div>
+        <h3>Users</h3>
+        <ul id="users"></ul>
+    </div>
+
+    <form id="nameForm" action="">
+        <input id="nameInput" autocomplete="off" /><button>Set Name</button>
+        <h4 id="name"></h4>
+        <!-- <h4 id="id"></h4> -->
+    </form>
+
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send Message</button>
+    </form>
+    <ul id="messages"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>
